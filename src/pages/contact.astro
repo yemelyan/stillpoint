@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+	title="Contact Stillpoint"
+	description="Reach out to schedule a guided sit, request a collective session, or ask about the Stillpoint experience."
+>
+	<section class="section">
+		<div class="container">
+			<div class="section-card">
+				<span class="tag">Contact</span>
+				<h1>Let’s plan your next sit.</h1>
+				<p>
+					Share a few details and we will respond with suggested times, session formats, and
+					study options. Stillpoint is fictional, but the calm is real.
+				</p>
+				<form class="contact-form" aria-label="Contact form">
+					<label>
+						<span>Name</span>
+						<input type="text" name="name" autocomplete="name" placeholder="Your name" />
+					</label>
+					<label>
+						<span>Email</span>
+						<input type="email" name="email" autocomplete="email" placeholder="you@email.com" />
+					</label>
+					<label>
+						<span>How can we help?</span>
+						<textarea name="message" rows="5" placeholder="Tell us about your practice."></textarea>
+					</label>
+					<button class="button" type="submit">Send message</button>
+					<p class="form-note">
+						Prefer email? Write to
+						<a href="mailto:hello@stillpoint.ai">hello@stillpoint.ai</a>.
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+</Layout>

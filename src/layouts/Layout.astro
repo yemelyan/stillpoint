@@ -1,22 +1,59 @@
+---
+import "../styles/global.css";
+
+const {
+	title = "Stillpoint — 24h Live AI Meditation Mentor",
+	description = "A calm, always-on mentor that studies meditation materials with you, hosts sits, and guides collective sessions.",
+	siteName = "Stillpoint",
+} = Astro.props;
+const canonicalUrl = Astro.site
+	? new URL(Astro.url.pathname, Astro.site)
+	: null;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={siteName} />
+		{canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+		<meta property="og:image" content="/og-image.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="theme-color" content="#f6f5f2" />
 	</head>
 	<body>
-		<slot />
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="/" aria-label="Stillpoint home">
+					<span class="brand-dot" aria-hidden="true"></span>
+					<span>{siteName}</span>
+				</a>
+				<nav class="site-nav" aria-label="Primary">
+					<a href="/">Home</a>
+					<a href="/contact">Contact</a>
+					<a href="/#newsletter">Newsletter</a>
+				</nav>
+			</div>
+		</header>
+		<main id="main" class="site-main">
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>Stillpoint is a fictional product concept for calm, collective practice.</p>
+				<p>© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
