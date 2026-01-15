@@ -5,11 +5,12 @@ import Features from "../components/Features.astro";
 import HowItWorks from "../components/HowItWorks.astro";
 import Newsletter from "../components/Newsletter.astro";
 import FAQ from "../components/FAQ.astro";
+import site from "../content/site.json";
 ---
 
 <Layout
-	title="Stillpoint — 24h Live AI Meditation Mentor"
-	description="A calm, always-on mentor that studies meditation materials with you, hosts sits, and guides collective sessions."
+	title={site.home.metaTitle}
+	description={site.home.metaDescription}
 >
 	<Hero />
 	<Features />

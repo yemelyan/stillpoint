@@ -1,0 +1,116 @@
+{
+	"siteName": "Stillpoint",
+	"home": {
+		"metaTitle": "Stillpoint — 24/7 live AI meditation mentor",
+		"metaDescription": "A 24/7 live AI meditation mentor in your pocket: solo or collective sits, co-watching educational videos, reading meditation books together, and reflective practice conversations. Apply to join the pilot.",
+		"hero": {
+			"headline": "Let’s make practice easier to return to.",
+			"subheadline": "Stillpoint is a 24/7 live AI meditation mentor you can access through an app—sit alone or with others, keep a steady rhythm, learn from videos and books, and talk through what’s happening in your practice.",
+			"primaryCta": {
+				"label": "Apply to join",
+				"href": "#newsletter"
+			},
+			"secondaryCta": {
+				"label": "See how it works",
+				"href": "#how-it-works"
+			},
+			"note": "Pilot program. Calm pace. Limited places."
+		},
+		"features": {
+			"heading": "A practice container you can actually return to.",
+			"intro": "If you already meditate, you know the hard part isn’t information—it’s continuity. Stillpoint is built around returning: to the seat, to attention, and to honest reflection.",
+			"items": [
+				{
+					"title": "Co-presence sitting (not another guided track)",
+					"description": "Start a sit anytime with a steady companion presence. Keep it fully silent or request minimal prompts. The focus is practice—not entertainment."
+				},
+				{
+					"title": "Gentle accountability that respects real life",
+					"description": "Set a rhythm you can keep. When you miss a day, return cleanly—without guilt. Stillpoint helps you reduce friction and maintain the thread."
+				},
+				{
+					"title": "Collective sessions with other practitioners",
+					"description": "Join shared sits across the day: a brief opening, a timed sit, and optional reflection afterwards. Enough social gravity to show up, without performance pressure."
+				},
+				{
+					"title": "Reflective conversation after the sit",
+					"description": "Review what actually happened: distraction patterns, effort balance, posture, mood, and habit loops. Then choose one small adjustment for the next sit."
+				},
+				{
+					"title": "Learn alongside practice (videos + books)",
+					"description": "Co-watch educational videos and co-read meditation books with the mentor. Extract practical takeaways and translate them into concrete practice experiments."
+				}
+			]
+		},
+		"howItWorks": {
+			"heading": "Simple steps. Long runway.",
+			"steps": [
+				{
+					"title": "Download and set your rhythm",
+					"description": "Choose a pace you can sustain—short or long sits, solo or collective. Stillpoint is designed for continuity, not intensity."
+				},
+				{
+					"title": "Sit (solo or together), anytime",
+					"description": "The mentor is live 24/7. Start a session whenever you want, or join scheduled group sits that run throughout the day."
+				},
+				{
+					"title": "Reflect, learn, and adjust",
+					"description": "Do a short post-sit reflection, then optionally watch a video or review a book section together. Convert insights into one testable change for your next sit."
+				}
+			]
+		},
+		"newsletter": {
+			"heading": "Apply to join the pilot",
+			"text": "Stillpoint is currently running as a small, careful pilot. Apply to join—or subscribe for updates on cohorts, collective sessions, and release timing.",
+			"privacy": "No spam. Occasional updates only. Unsubscribe anytime.",
+			"consent": "By subscribing, you agree to receive emails about Stillpoint. You can unsubscribe at any time.",
+			"updatesLine": "Prefer updates only? Subscribe.",
+			"iframeSrc": "https://fa742c10.sibforms.com/serve/MUIFAASV0Fwt9zBfqNEX8JXhBTR-K9zrKtkIWkF2MbJjxsf-VXj_DAa8rGd8zbQmliYKRZiqS9vBW4LAmWQ-RaQt_b-_-bumP2ZUeHKckluxD3P3rbbbsW6ty8bl7TPA7ek7eCLxpdhKnlCQ4C9Pja0JHSKfZKiqq5pWqkpk6KQcLp0spuFSAhkCXkwOA-HsL9vU8WxHbR22lyQtDQ=="
+		},
+		"faq": {
+			"heading": "FAQ",
+			"items": [
+				{
+					"q": "What is Stillpoint?",
+					"a": "A 24/7 live AI meditation mentor you access through an app: solo or group sits, reflective practice conversations, and learning through videos and books translated into practice."
+				},
+				{
+					"q": "What is it not?",
+					"a": "Not therapy, not medical advice, not a crisis service, and not a replacement for a human teacher. It’s a practice-support environment."
+				},
+				{
+					"q": "Who is it for?",
+					"a": "Light to medium practitioners who already meditate and want steadier continuity, clearer reflection, and optional shared sessions."
+				},
+				{
+					"q": "How does the AI help during practice?",
+					"a": "It can keep time, offer minimal prompts if you want them, and help you reflect after sits—focused on practical adjustments rather than grand claims."
+				},
+				{
+					"q": "Is it really 24/7 live?",
+					"a": "Yes. The mentor is available any time. Collective sessions run across the day and expand as the community grows."
+				},
+				{
+					"q": "How do you handle privacy?",
+					"a": "We aim for minimal data collection. Email subscribers can unsubscribe anytime. Any deeper privacy policy details can be linked once published."
+				},
+				{
+					"q": "What does it cost?",
+					"a": "Pricing is to be confirmed. The pilot is small so we can learn what support is genuinely useful and sustainable."
+				}
+			]
+		}
+	},
+	"contact": {
+		"pageTitle": "Contact",
+		"headline": "Let’s plan your next sit.",
+		"subheadline": "Share a few details and we’ll respond with suggested times, session formats, and study options.",
+		"form": {
+			"nameLabel": "Name",
+			"emailLabel": "Email",
+			"messageLabel": "How can we help?",
+			"submitLabel": "Send message"
+		},
+		"preferEmail": "Prefer email? Write to hello@stillpoint.ai."
+	}
+}

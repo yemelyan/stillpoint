@@ -1,31 +1,18 @@
+---
+import site from "../content/site.json";
+const { faq } = site.home;
+---
+
 <section class="section">
 	<div class="container">
-		<h2>[FAQ heading]</h2>
-		<div class="grid grid-2">
-			<details class="section-card">
-				<summary>[Question]</summary>
-				<p>[Answer]</p>
-			</details>
-			<details class="section-card">
-				<summary>[Question]</summary>
-				<p>[Answer]</p>
-			</details>
-			<details class="section-card">
-				<summary>[Question]</summary>
-				<p>[Answer]</p>
-			</details>
-			<details class="section-card">
-				<summary>[Question]</summary>
-				<p>[Answer]</p>
-			</details>
-			<details class="section-card">
-				<summary>[Question]</summary>
-				<p>[Answer]</p>
-			</details>
-			<details class="section-card">
-				<summary>[Question]</summary>
-				<p>[Answer]</p>
-			</details>
+		<h2>{faq.heading}</h2>
+		<div class="faq-list">
+			{faq.items.map((item) => (
+				<details class="section-card faq-item">
+					<summary>{item.q}</summary>
+					<p>{item.a}</p>
+				</details>
+			))}
 		</div>
 	</div>
 </section>

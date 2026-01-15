@@ -1,11 +1,57 @@
+---
+import site from "../content/site.json";
+const { hero } = site.home;
+---
+
 <section class="section">
 	<div class="container">
-		<div class="section-card">
-			<h1>[Hero headline]</h1>
-			<p>[Hero subheadline]</p>
-			<div class="cta-row">
-				<a class="button secondary" href="#newsletter">Join the newsletter</a>
-				<a class="button" href="/contact">Contact</a>
+		<div class="hero">
+			<div class="hero-content">
+				<span class="hero-badge">24/7 LIVE • APP-BASED • SOLO + COLLECTIVE</span>
+				<h1>{hero.headline}</h1>
+				<p class="hero-subheadline">{hero.subheadline}</p>
+				<div class="cta-row">
+					<a class="button" href={hero.primaryCta.href}>{hero.primaryCta.label}</a>
+					<a class="button secondary quiet" href={hero.secondaryCta.href}>
+						{hero.secondaryCta.label}
+						<span aria-hidden="true">→</span>
+					</a>
+				</div>
+				<p class="hero-trust">
+					24/7 live mentor · Solo &amp; collective sits · Videos + books · Privacy-first
+				</p>
+				<p class="hero-note">{hero.note}</p>
+			</div>
+			<div class="hero-preview" aria-label="App preview">
+				<div class="hero-glow" aria-hidden="true"></div>
+				<div class="preview-card">
+					<div class="preview-header">
+						<span>Stillpoint</span>
+						<span class="live-indicator">
+							<span class="live-dot" aria-hidden="true"></span>
+							Live now
+						</span>
+					</div>
+					<div class="preview-list">
+						<div class="preview-item">
+							<span class="preview-icon" aria-hidden="true"></span>
+							<span>Start a sit</span>
+						</div>
+						<div class="preview-item">
+							<span class="preview-icon" aria-hidden="true"></span>
+							<span>Join a live group</span>
+						</div>
+						<div class="preview-item">
+							<span class="preview-icon" aria-hidden="true"></span>
+							<span>Watch together</span>
+						</div>
+						<div class="preview-item">
+							<span class="preview-icon" aria-hidden="true"></span>
+							<span>Reflect (1 min)</span>
+						</div>
+					</div>
+					<div class="preview-footer">24/7 live mentor • Solo + collective</div>
+				</div>
 			</div>
 		</div>
 	</div>

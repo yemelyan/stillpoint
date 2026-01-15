@@ -1,37 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import site from "../content/site.json";
+
+const { contact } = site;
 ---
 
 <Layout
-	title="Contact Stillpoint"
-	description="Reach out to schedule a guided sit, request a collective session, or ask about the Stillpoint experience."
+	title={contact.pageTitle}
+	description={contact.subheadline}
 >
 	<section class="section">
 		<div class="container">
 			<div class="section-card">
-				<span class="tag">Contact</span>
-				<h1>Let’s plan your next sit.</h1>
-				<p>
-					Share a few details and we will respond with suggested times, session formats, and
-					study options. Stillpoint is fictional, but the calm is real.
-				</p>
+				<span class="tag">{contact.pageTitle}</span>
+				<h1>{contact.headline}</h1>
+				<p>{contact.subheadline}</p>
 				<form class="contact-form" aria-label="Contact form">
 					<label>
-						<span>Name</span>
+						<span>{contact.form.nameLabel}</span>
 						<input type="text" name="name" autocomplete="name" placeholder="Your name" />
 					</label>
 					<label>
-						<span>Email</span>
+						<span>{contact.form.emailLabel}</span>
 						<input type="email" name="email" autocomplete="email" placeholder="you@email.com" />
 					</label>
 					<label>
-						<span>How can we help?</span>
+						<span>{contact.form.messageLabel}</span>
 						<textarea name="message" rows="5" placeholder="Tell us about your practice."></textarea>
 					</label>
-					<button class="button" type="submit">Send message</button>
+					<button class="button" type="submit">{contact.form.submitLabel}</button>
 					<p class="form-note">
-						Prefer email? Write to
-						<a href="mailto:hello@stillpoint.ai">hello@stillpoint.ai</a>.
+						{contact.preferEmail}
 					</p>
 				</form>
 			</div>

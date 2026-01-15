@@ -1,28 +1,58 @@
+---
+import site from "../content/site.json";
+const { features } = site.home;
+const primaryItems = features.items.slice(0, 3);
+const secondaryItems = features.items.slice(3);
+const primaryMeta = [
+	{ label: "Practice", className: "accent-practice" },
+	{ label: "Continuity", className: "accent-continuity" },
+	{ label: "Community", className: "accent-community" },
+];
+const secondaryMeta = [
+	{ label: "Reflection", className: "accent-reflection" },
+	{ label: "Learning", className: "accent-learning" },
+];
+---
+
 <section class="section">
 	<div class="container">
-		<h2>[Features section heading]</h2>
-		<p>[Features section intro]</p>
-		<div class="grid grid-3">
-			<article class="section-card">
-				<h3>[Feature title]</h3>
-				<p>[Feature description]</p>
-			</article>
-			<article class="section-card">
-				<h3>[Feature title]</h3>
-				<p>[Feature description]</p>
-			</article>
-			<article class="section-card">
-				<h3>[Feature title]</h3>
-				<p>[Feature description]</p>
-			</article>
-			<article class="section-card">
-				<h3>[Feature title]</h3>
-				<p>[Feature description]</p>
-			</article>
-			<article class="section-card">
-				<h3>[Feature title]</h3>
-				<p>[Feature description]</p>
-			</article>
+		<h2>{features.heading}</h2>
+		<p>{features.intro}</p>
+		<div class="features-grid">
+			<div class="features-row features-row-primary">
+				{primaryItems.map((item, index) => (
+					<article class={`section-card feature-card ${primaryMeta[index].className}`}>
+						<div class="feature-meta">
+							<span class="feature-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<circle cx="12" cy="12" r="6" />
+									<circle cx="12" cy="12" r="10" opacity="0.4" />
+								</svg>
+							</span>
+							<span class="feature-label">{primaryMeta[index].label}</span>
+						</div>
+						<h3>{item.title}</h3>
+						<p>{item.description}</p>
+					</article>
+				))}
+			</div>
+			<div class="features-row features-row-secondary">
+				{secondaryItems.map((item, index) => (
+					<article class={`section-card feature-card ${secondaryMeta[index].className}`}>
+						<div class="feature-meta">
+							<span class="feature-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<rect x="5" y="5" width="14" height="14" rx="4" />
+									<rect x="8" y="8" width="8" height="8" rx="3" opacity="0.4" />
+								</svg>
+							</span>
+							<span class="feature-label">{secondaryMeta[index].label}</span>
+						</div>
+						<h3>{item.title}</h3>
+						<p>{item.description}</p>
+					</article>
+				))}
+			</div>
 		</div>
 	</div>
 </section>

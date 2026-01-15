@@ -1,20 +1,19 @@
-<section class="section">
+---
+import site from "../content/site.json";
+const { howItWorks } = site.home;
+---
+
+<section id="how-it-works" class="section">
 	<div class="container">
 		<div class="section-card">
-			<h2>[How it works heading]</h2>
+			<h2>{howItWorks.heading}</h2>
 			<div class="grid grid-2">
-				<div>
-					<h3>[Step title]</h3>
-					<p>[Step description]</p>
-				</div>
-				<div>
-					<h3>[Step title]</h3>
-					<p>[Step description]</p>
-				</div>
-				<div>
-					<h3>[Step title]</h3>
-					<p>[Step description]</p>
-				</div>
+				{howItWorks.steps.map((step) => (
+					<div>
+						<h3>{step.title}</h3>
+						<p>{step.description}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	</div>
